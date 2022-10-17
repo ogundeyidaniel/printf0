@@ -34,7 +34,8 @@ int main(void)
 	_printf("asdfasdfas\n");
 	printf("asdfasdfas\n");
 	_printf("--------------\n\n\n");
-	_printf("fasdf\n %s\n %c\n %s\n %s\n %s\n %i\n %b\n\n\n", s, c, s2, s3, s4, i, b);
+	_printf("fasdf\n %s\n %c\n %s\n %s\n %s\n %i\n %b\n\n\n", s,
+			c, s2, s3, s4, i, b);
 	printf("fasdf\n %s\n %c\n %s\n %s\n %s\n %i\n\n\n", s, c, s2, s3, s4, i);
 	_printf("--------------\n\n");
 	_printf("%b\n", 98);
@@ -43,26 +44,41 @@ int main(void)
 }
 
 /**
-EXPECTED OUTPUT
-asdfasdfas
-asdfasdfas
---------------
-fasdf
- Lorem ipsum dolor sit amet, consectetur adipiscing elit
- p
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- -123455
- 1100010
-fasdf
- Lorem ipsum dolor sit amet, consectetur adipiscing elit
- p
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- -123455
---------------
-1100010
---------------
-*/
+ * EXPECTED OUTPUT
+ * asdfasdfas
+ * asdfasdfas
+ * --------------
+ *
+ *
+ * fasdf
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit
+ *
+ * p
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * -123455
+ * 1100010
+ *
+ *
+ * fasdf
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit
+ *
+ * p
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ *
+ * -123455
+ *
+ *
+ * --------------
+ *
+ * 1100010
+ * --------------
+ */
